@@ -6,7 +6,13 @@
 
   <groupId>com.lsandoval</groupId>
   <artifactId>fraud_microservices</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+
+  <!-- Se agregan los modulos de manera automatica -->
+  <modules>
+    <module>customer</module>
+  </modules>
 
   <name>fraud_microservices</name>
   <url>http://www.example.com</url>
