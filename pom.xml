@@ -12,6 +12,7 @@
   <!-- Se agregan los modulos de manera automatica -->
   <modules>
     <module>customer</module>
+      <module>fraud</module>
   </modules>
 
   <name>fraud_microservices</name>
