@@ -29,8 +29,9 @@ public class CustomerService {
         customerRepository.saveAndFlush(customer);
 
         // check if fraudster
+        // Cambiamos la ip y puerto por el nombre de la aplicacion registrada en el servidor eureka
         FraudCheckResponse fraudCheckResponse = restTemplate.getForObject(
-                "http://localhost:8081/api/v1/fraud-check/{customerId}",
+                "http://FRAUD/api/v1/fraud-check/{customerId}",
                 FraudCheckResponse.class,
                 customer.getId()
         );
